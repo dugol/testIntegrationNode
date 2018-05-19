@@ -16,6 +16,7 @@ app.use(cors());
 // ingresar palabra a la bd
 app.get('/api/codebreaker/:number',function(req, res){	
     var number = req.params.number;
+    codebreaker.setSecret([1,2,3,4]);
 	res.send(JSON.stringify(codebreaker.game(number)));
 });
 
