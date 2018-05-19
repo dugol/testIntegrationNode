@@ -36,6 +36,7 @@ var codeBreaker1 = {
     setSecret:function(str){
         this.numero=str;
     }
+
 }
 
 module.exports= codeBreaker1;
