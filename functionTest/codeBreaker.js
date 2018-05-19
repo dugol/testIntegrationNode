@@ -1,5 +1,6 @@
 module.exports={
-    game:function(num){
+
+    game:function(num){        
         numero =  [1,2,3,4];
         numeroIngresado = num.toString();
         var resultado="";
@@ -31,5 +32,9 @@ module.exports={
             }
         }
         return varX + var_;
+    },
+
+    ingresarNumero:function(str){
+        
     }
 }

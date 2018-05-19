@@ -5,7 +5,8 @@ var app = express();
 var server = require('http').Server(app);
 var codebreaker = require ('./functionTest/codeBreaker');
 
-const port=8000;
+const port = process.env.PORT || 8000;
+
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -21,14 +22,3 @@ app.get('/api/codebreaker/:number',function(req, res){
 server.listen(port, function(){
 	console.log("Corriendo por el puerto "+port)
 });
-
-/*
-if (err) {
-    res.status(500) // los 500 son errores del Servidor
-    res.send({ message: `Error al guardar elemento en la BD ${err}` });
-}else {
-    res.send(JSON.stringify())
-    res.status(200);
-    //res.redirect('/'); // luego de insertar redireciona
-    res.end(); // finalizar la petición
-}*/

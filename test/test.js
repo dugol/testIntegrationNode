@@ -1,8 +1,12 @@
 var assert = require('assert');
 var codeBreaker = require('../functionTest/codeBreaker');
-
+var numero = 0;
 describe('codeBreakerTest',function(){
     describe('succesfulTests', function(){
+        before(function () {
+            
+        });
+
         it('1234 return XXXX', function(){
             assert.equal(codeBreaker.game(1234),"XXXX");
         });
@@ -27,4 +31,5 @@ describe('codeBreakerTest',function(){
         
     });            
 });
+
 
