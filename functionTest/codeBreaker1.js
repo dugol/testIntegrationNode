@@ -1,12 +1,12 @@
-module.exports={
-
+var numero = [0,0,0,0];
+var codeBreaker1 = {
     game:function(num){
-        numero =  [1,2,3,4];
+        //numero =  [1,2,3,4];
         numeroIngresado = num.toString();
         var resultado="";
-        for (var i = 0; i < numero.length; i++) {
+        for (var i = 0; i < this.numero.length; i++) {
             for(var j=0;j < numeroIngresado.length; j++ ){
-                if((numero[i]==numeroIngresado[j])){
+                if((this.numero[i]==numeroIngresado[j])){
                     if((i==j)){
                         resultado+="X";
                     } else {
@@ -33,8 +33,9 @@ module.exports={
         }
         return varX + var_;
     },
-
-    setSecretCode:function(str){
-        return str
+    setSecret:function(str){
+        this.numero=str;
     }
 }
+
+module.exports= codeBreaker1;
