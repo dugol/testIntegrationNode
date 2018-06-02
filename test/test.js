@@ -2,13 +2,7 @@ var assert = require('assert');
 var codeBreaker = require('../functionTest/codeBreaker');
 var codeBreaker1 = require('../functionTest/codeBreaker1');
 var numero = 0;
-var chai = require('chai');
-var chaiHttp = require('chai-http');
 var app = require('../index.js');
-
-var expect = chai.expect;
-
-chai.use(chaiHttp);
 
 describe('codeBreakerTest', function () {
     describe('succesfulTests', function () {
