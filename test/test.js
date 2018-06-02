@@ -34,23 +34,4 @@ describe('codeBreakerTest', function () {
 
     });
 });
-/*
-describe('codeBreakerAPITest', function () {
-    before(function () {
-        codeBreaker1.setSecret([1, 2, 3, 4]);
-    });
-    it('todos iguales', (done) => {
-		chai.request(app)
-			.get('/api/codebreaker/1234')
-			.end( function(err,res){
-				//console.log("res: "+res.body)
-                expect(res.body).to.have.property('resultado').to.be.equal("xxxx");
-                expect(res).to.have.status(200);                
-				done();
-			});
-    });
-
-});
-
-*/
 
